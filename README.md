@@ -13,7 +13,7 @@ The repository is organized by grid size, with each grid size having its own dir
 
 Within each directory, you'll find the following files:
 
-	mini_Avalam_{size}.ipynb: The main notebook for running the AI agent.
+	mini_avalam.ipynb or avalam.ipynb in the case of 9x9 grid : The main notebook for running the AI agent.
 	self_play_mini_Avalam_{size}.py: Contains the ResNet implementation for the AI agent.
 	mini_Avalam_{size}.py: Contains the rules of the Avalam game, implemented as an array representation for self-play.
 	data_augmentation.py: Contains the implementation of data augmentation technique as explained in the report.
