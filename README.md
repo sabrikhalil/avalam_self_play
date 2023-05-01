@@ -17,7 +17,8 @@ Within each directory, you'll find the following files:
 	self_play_mini_Avalam_{size}.py: Contains the ResNet implementation for the AI agent.
 	mini_Avalam_{size}.py: Contains the rules of the Avalam game, implemented as an array representation for self-play.
 	data_augmentation.py: Contains the implementation of data augmentation technique as explained in the report.
-	Model and optimizer files for different iterations and training methods. For example, model_{n_iter}.pt is the model file after 	n_iter iterations of self-play training.
+	Model and optimizer files for different iterations and training methods. 
+	For example, model_{n_iter}.pt is the model file after n_iter iterations of self-play training.
 
 Please note that size refers to the grid size, and n_iter refers to the number of training iterations.
 
