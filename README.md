@@ -24,7 +24,7 @@ Within each directory, you'll find the following files:
 The models are saved as follow : 
 
 	self play : model_{n_iter}.pt
-	self with parallelization : model_paral_{n_iter}.pt 
+	self play with parallelization : model_paral_{n_iter}.pt 
 	model trained with supervised learning : model_supervised_{n_iter}.pt
 	model trained with supervised learning and a bigger model : model_supervised_big_model_{n_iter}.pt 
 	Main avalam 9x9, the main model that took 1 day of training is : model_supervised_big_model_final_0.pt
