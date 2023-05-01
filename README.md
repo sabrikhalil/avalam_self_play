@@ -39,7 +39,9 @@ Getting Started:
 
 
 Requirements :
+
 The AI agent was developed using Python 3.7. The following libraries are required:
+	
 	PyTorch
 	NumPy
 	tqdm.notebook
