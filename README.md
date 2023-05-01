@@ -21,7 +21,7 @@ Within each directory, you'll find the following files:
 	For example, model_{n_iter}.pt is the model file after n_iter iterations of self-play training.
 	Please note that size refers to the grid size, and n_iter refers to the number of training iterations.
 	
-The model are saved as follow : 
+The models are saved as follow : 
 
 	self play : model_{n_iter}.pt
 	self with parallelization : model_paral_{n_iter}.pt 
