@@ -1,7 +1,6 @@
 # avalam_self_play
 Avalam - Self Play Agent
 
-Avalam AI Agent :
 This repository contains the source code for an AI agent designed to play the board game Avalam.
 The agent uses Monte Carlo Tree Search (MCTS) and a neural network for decision making.
 
