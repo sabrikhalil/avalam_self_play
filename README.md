@@ -22,6 +22,7 @@ Within each directory, you'll find the following files:
 	Please note that size refers to the grid size, and n_iter refers to the number of training iterations.
 	
 The model are saved as follow : 
+
 	self play : model_{n_iter}.pt
 	self with parallelization : model_paral_{n_iter}.pt 
 	model trained with supervised learning : model_supervised_{n_iter}.pt
@@ -30,6 +31,7 @@ The model are saved as follow :
 	
 
 Getting Started:
+
 	Clone the repository: git clone https://github.com/sabrikhalil/avalam_self_play
 	Navigate into the avalam_self_play directory 
 	Choose the grid size you're interested in and navigate into the corresponding directory: cd mini_Avalam_3x3
