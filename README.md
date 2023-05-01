@@ -1,7 +1,6 @@
 # avalam_self_play
 Avalam - Self Play Agent
 
-Avalam AI Agent :
 This repository contains the source code for an AI agent designed to play the board game Avalam.
 The agent uses Monte Carlo Tree Search (MCTS) and a neural network for decision making.
 
@@ -14,24 +13,35 @@ The repository is organized by grid size, with each grid size having its own dir
 
 Within each directory, you'll find the following files:
 
-	mini_Avalam_{size}.ipynb: The main notebook for running the AI agent.
+	mini_avalam_{size}.ipynb or avalam_{size}.ipynb : The main notebook for running the AI agent.
 	self_play_mini_Avalam_{size}.py: Contains the ResNet implementation for the AI agent.
 	mini_Avalam_{size}.py: Contains the rules of the Avalam game, implemented as an array representation for self-play.
 	data_augmentation.py: Contains the implementation of data augmentation technique as explained in the report.
-	Model and optimizer files for different iterations and training methods. For example, model_{n_iter}.pt is the model file after 	n_iter iterations of self-play training.
+	Model and optimizer files for different iterations and training methods. 
+	For example, model_{n_iter}.pt is the model file after n_iter iterations of self-play training.
+	Please note that size refers to the grid size, and n_iter refers to the number of training iterations.
+	
+The models are saved as follow : 
 
-Please note that size refers to the grid size, and n_iter refers to the number of training iterations.
-
+	self play : model_{n_iter}.pt
+	self play with parallelization : model_paral_{n_iter}.pt 
+	model trained with supervised learning : model_supervised_{n_iter}.pt
+	model trained with supervised learning and a bigger model : model_supervised_big_model_{n_iter}.pt 
+	Main avalam 9x9, the main model that took 1 day of training is : model_supervised_big_model_final_0.pt
+	
 
 Getting Started:
-Clone the repository: git clone https://github.com/sabrikhalil/avalam_self_play
-Navigate into the avalam_self_play directory 
-Choose the grid size you're interested in and navigate into the corresponding directory: cd mini_Avalam_3x3
-Open the main notebook: jupyter notebook mini_Avalam_3x3.ipynb
+
+	Clone the repository: git clone https://github.com/sabrikhalil/avalam_self_play
+	Navigate into the avalam_self_play directory 
+	Choose the grid size you're interested in and navigate into the corresponding directory: cd mini_Avalam_3x3
+	Open the main notebook: jupyter notebook mini_Avalam_3x3.ipynb
 
 
 Requirements :
+
 The AI agent was developed using Python 3.7. The following libraries are required:
+	
 	PyTorch
 	NumPy
 	tqdm.notebook
